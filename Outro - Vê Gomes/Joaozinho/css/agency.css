@@ -1,0 +1,415 @@
+.text-muted {
+    color: #777
+}
+.text-primary {
+    color: #f64bbe
+}
+p {
+    font-size: 14px;
+    line-height: 1.75
+}
+p.large {
+    font-size: 16px
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    text-decoration:none;
+}
+a {
+    color: #f64bbe
+}
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #f20da6
+}
+
+.img-centered {
+    margin: 0 auto
+}
+.bg-light-gray {
+    background-color: #f7f7f7
+}
+.bg-darkest-gray {
+    background-color: #222
+}
+.btn-primary {
+    color: #fff;
+    background-color: #f64bbe;
+    border-color: #f64bbe;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #f20da6;
+    border-color: #e30398
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    background-color: #f64bbe;
+    border-color: #f64bbe
+}
+.btn-primary .badge {
+    color: #f64bbe;
+    background-color: #fff
+}
+.btn-xl {
+    color: #fff;
+    background-color: #f64bbe;
+    border-color: #f64bbe;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px
+}
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    color: #fff;
+    background-color: #f20da6;
+    border-color: #e30398
+}
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    background-image: none
+}
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    background-color: #f64bbe;
+    border-color: #f64bbe
+}
+.btn-xl .badge {
+    color: #f64bbe;
+    background-color: #fff
+}
+
+section {
+    padding: 100px 0
+}
+section h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px
+}
+section h3.section-subheading {
+    font-size: 16px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 75px
+}
+@media (min-width: 768px) {
+    section {
+        padding: 50px 0
+    }
+}
+.service-heading {
+    margin: 15px 0;
+    text-transform: none
+}
+#portfolio .portfolio-item {
+    margin: 0 0 15px;
+    right: 0
+}
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    background: rgba(246, 75, 190, .8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    top: 50%;
+    margin-top: -12px;
+    color: #fff
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+    margin-top: -12px
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+    margin: 0
+}
+#portfolio .portfolio-item .portfolio-caption {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 25px
+}
+#portfolio .portfolio-item .portfolio-caption h4 {
+    text-transform: none;
+    margin: 0
+}
+#portfolio .portfolio-item .portfolio-caption p {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    margin: 0
+}
+#portfolio * {
+    z-index: 2
+}
+@media (min-width: 767px) {
+    #portfolio .portfolio-item {
+        margin: 0 0 30px
+    }
+}
+
+aside.clients img {
+    margin: 50px auto
+}
+section#contact {
+    background-color: #222;
+    /*background-image: url(../img/map-image.png);*/
+    background-position: center;
+    background-repeat: no-repeat
+}
+section#contact .section-heading {
+    color: #fff
+}
+section#contact .form-group {
+    margin-bottom: 25px
+}
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px
+}
+section#contact .form-group input.form-control {
+    height: 5px
+}
+section#contact .form-group textarea.form-control {
+    height: 120px
+}
+section#contact .form-control:focus {
+    border-color: #f64bbe;
+    box-shadow: none
+}
+section#contact::-webkit-input-placeholder {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbb
+}
+section#contact:-moz-placeholder {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbb
+}
+section#contact::-moz-placeholder {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbb
+}
+section#contact:-ms-input-placeholder {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bbb
+}
+section#contact .text-danger {
+    color: #e74c3c
+}
+
+ul.social-buttons {
+    margin-bottom: 0
+}
+ul.social-buttons li a {
+    display: block;
+    background-color: #222;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    outline: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s
+}
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: #f64bbe
+}
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+    outline: 0
+}
+.portfolio-modal .modal-content {
+    border-radius: 0;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+    min-height: 100%;
+    padding: 100px 0;
+    text-align: center
+}
+.portfolio-modal .modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 3em
+}
+.portfolio-modal .modal-content p {
+    margin-bottom: 30px
+}
+.portfolio-modal .modal-content p.item-intro {
+    margin: 20px 0 30px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px
+}
+.portfolio-modal .modal-content ul.list-inline {
+    margin-bottom: 30px;
+    margin-top: 0
+}
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px
+}
+.portfolio-modal .close-modal {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    top: 25px;
+    right: 25px;
+    cursor: pointer
+}
+.portfolio-modal .close-modal:hover {
+    opacity: .3
+}
+.portfolio-modal .close-modal .lr {
+    height: 75px;
+    width: 1px;
+    margin-left: 35px;
+    background-color: #222;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 1051
+}
+.portfolio-modal .close-modal .lr .rl {
+    height: 75px;
+    width: 1px;
+    background-color: #222;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    z-index: 1052
+}
+.portfolio-modal .modal-backdrop {
+    opacity: 0;
+    display: none
+}
+::-moz-selection {
+    text-shadow: none;
+    background: #f64bbe
+}
+::selection {
+    text-shadow: none;
+    background: #f64bbe
+}
+img::selection {
+    background: 0 0
+}
+img::-moz-selection {
+    background: 0 0
+}
+body {
+    webkit-tap-highlight-color: #f64bbe
+}
+/* MODAL EQUIPA */
+#lean_overlay {
+    position: fixed;
+    z-index:10000;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+#financeiro, #informatica, #rh, #comercial, #comunicacao {
+    width: 600px;
+    padding: 30px; 
+    display:none;
+    background: #FFF;
+    border-radius: 0px; 
+    -moz-border-radius: 0px; 
+    -webkit-border-radius: 0px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.7); 
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7); 
+    -moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+}
+#financeiro p, #informatica p, #rh p, #comercial p, #comunicacao p {color: #666; text-shadow: none;}
