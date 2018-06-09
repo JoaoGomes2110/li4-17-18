@@ -98,7 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Images\login_image.jpg" />
+    <Content Include="Images\logo.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -110,6 +110,7 @@
     </Compile>
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Material.cs" />
+    <Compile Include="Models\ServicosHoje.cs" />
     <Compile Include="MyHelpers.cs" />
     <Compile Include="Models\Pintor.cs" />
     <Compile Include="Models\Proprietario.cs" />

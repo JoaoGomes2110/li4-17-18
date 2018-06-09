@@ -15,16 +15,20 @@ namespace SmartPainting.Controllers
         public ActionResult Home()
         {
             DateTime today = DateTime.Today;
-            List<Serviço> serviçosDeHoje = new List<Serviço>();
-            foreach(Serviço s in db.Serviço)
+            var servicosDeHoje = new ServicosHoje
             {
-                if (s.data.Equals(today))
-                {
-                    serviçosDeHoje.Add(s);
-                }
-            }
+                servicosHoje = new List<Serviço>()
+            };
+            /*List<Serviço> serviçosDeHoje = new List<Serviço>();*/
 
-            return View(serviçosDeHoje);
+            var servico = (from m in db.Serviço
+                       select m);
+
+            servicosDeHoje.servicosHoje = servico.ToList();
+
+                
+
+            return View(servicosDeHoje.servicosHoje);
         }
     }
 }

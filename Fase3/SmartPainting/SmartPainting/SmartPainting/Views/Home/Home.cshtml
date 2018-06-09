@@ -1,4 +1,4 @@
-﻿@model IEnumerable<SmartPainting.Models.Serviço>
+﻿@model SmartPainting.Models.ServicosHoje
 
 @{
     Layout = null;
@@ -47,84 +47,44 @@
             </div>
         </div>
     </div>
+
     <div>
         <p>Serviços de hoje: </p>
         <table class="table">
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.data)
+                    data
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.email_pintor)
+                   email_pintor
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.email_cliente)
+                    email_cliente
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.preço)
+                    preco
                 </th>
             </tr>
 
-            @foreach (var item in Model)
+            @for (var i = 0; i < @Model.servicosHoje.Count; i++)
             {
                 <tr>
                     <td>
-                        @Html.DisplayFor(ModelItem => item.data)
+                        @Model.servicosHoje[i].data
                     </td>
                     <td>
-                        @Html.DisplayFor(ModelItem => item.email_pintor)
+                        @Model.servicosHoje[i].email_pintor
                     </td>
                     <td>
-                        @Html.DisplayFor(ModelItem => item.email_cliente)
+                       @Model.servicosHoje[i].email_cliente
                     </td>
                     <td>
-                        @Html.DisplayFor(ModelItem => item.preço)
+                        @Model.servicosHoje[i].preço
                     </td>
                 </tr>
             }
         </table>
     </div>
-
-    <div>
-        <p>Próximos Serviços</p>
-        <table class="table">
-            <tr>
-                <th>
-                    Data
-                </th>
-                <th>
-                    Hora
-                </th>
-                <th>
-                    Pintor
-                </th>
-                <th>
-                    Cliente
-                </th>
-                <th>
-                    Preço Estimado
-                </th>
-            </tr>
-
-            <tr>
-                <td>
-                    gg
-                </td>
-                <td>
-                    jj
-                </td>
-                <td>
-                    nn
-                </td>
-                <td>
-                    mm
-                </td>
-                <td>
-                    rr
-                </td>
-            </tr>
-
-        </table>
-    </div>
+       
 </body>
 </html>
