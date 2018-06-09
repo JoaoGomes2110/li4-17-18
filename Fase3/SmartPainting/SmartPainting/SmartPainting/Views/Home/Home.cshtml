@@ -1,0 +1,130 @@
+﻿@model IEnumerable<SmartPainting.Models.Serviço>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>HistServ</title>
+</head>
+<body>
+    <div class="w3-container">
+        <div class="w3-bar w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button">Inicio</a>
+            <a href="#" class="w3-bar-item w3-button">Hist. Serviço</a>
+            <a href="#" class="w3-bar-item w3-button">Lista de Pintores</a>
+            <a href="#" class="w3-bar-item w3-button">Lista de Clientes</a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Lista de Materiais</button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">Interiores</a>
+                    <a href="#" class="w3-bar-item w3-button">Exteriores</a>
+                    <a href="#" class="w3-bar-item w3-button">Tintas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p>Serviços de hoje: </p>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.data)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.email_pintor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.email_cliente)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.preço)
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(ModelItem => item.data)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(ModelItem => item.email_pintor)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(ModelItem => item.email_cliente)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(ModelItem => item.preço)
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+
+    <div>
+        <p>Próximos Serviços</p>
+        <table class="table">
+            <tr>
+                <th>
+                    Data
+                </th>
+                <th>
+                    Hora
+                </th>
+                <th>
+                    Pintor
+                </th>
+                <th>
+                    Cliente
+                </th>
+                <th>
+                    Preço Estimado
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    gg
+                </td>
+                <td>
+                    jj
+                </td>
+                <td>
+                    nn
+                </td>
+                <td>
+                    mm
+                </td>
+                <td>
+                    rr
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>
