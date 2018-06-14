@@ -1,2 +1,0 @@
-INSERT INTO Serviço (id,email_cliente,email_pintor,data,estado,preço,local,superfície,área,numeração,comentário,fotografia,tipo_de_pagamento,referência_multibanco)
-VALUES (1,N'j@gmail.com',N'C@gmail.com','05-06-2018',0,40.0,1,N'interior',15.0,NULL,NULL,NULL,1,123456789)

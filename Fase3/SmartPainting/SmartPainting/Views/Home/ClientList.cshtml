@@ -1,0 +1,229 @@
+﻿
+@{
+      Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 3%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        caption {
+            display: table-caption;
+            text-align: left;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: left;
+        }
+    </style>
+
+    <title>ClientList</title>
+</head>
+<body>
+    <div class="w3-bar w3-grey">
+        <a href="Home" class="w3-bar-item w3-button">Smart Painting</a>
+        <a href="Home" class="w3-bar-item w3-button w3-hide-small">Inicio</a>
+        <a href="ServiceHistory" class="w3-bar-item w3-button w3-hide-small">Hist. Serviços</a>
+        <a href="PainterList" class="w3-bar-item w3-button w3-hide-small">Lista de Pintores</a>
+        <a href="ClientList" class="w3-bar-item w3-button w3-hide-small">Lista de Clientes</a>
+        <div class="w3-dropdown-hover  w3-hide-small">
+            <button class="w3-button w3-hide-small">Lista de Materiais ▼</button>
+            <div class="w3-dropdown-content w3-card-4  w3-hide-small">
+                <a href="Interiors" class="w3-bar-item w3-button">Interiores</a>
+                <a href="Exteriors" class="w3-bar-item w3-button">Exteriores</a>
+                <a href="Paints" class="w3-bar-item w3-button">Tintas</a>
+            </div>
+        </div>
+        <a href="../Login/Index" class="w3-bar-item w3-button w3-hide-small w3-right">
+            <img src="~/Images/logout.png" width="25" height="15" class="img-responsive" alt="~Logout"> Logout
+        </a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div id="demo" class="w3-bar-block w3-grey w3-hide w3-hide-large w3-hide-medium">
+        <a href="Home" class="w3-bar-item w3-button">Inicio</a>
+        <a href="Home" class="w3-bar-item w3-button">Hist. Serviços</a>
+        <a href="PainterList" class="w3-bar-item w3-button">Lista de Pintores</a>
+        <a href="ClientList" class="w3-bar-item w3-button">Lista de Clientes</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Lista de Materiais ▼</button>
+            <div class="w3-dropdown-content w3-card-4">
+                <a href="Interiors" class="w3-bar-item w3-button">Interiores</a>
+                <a href="Exteriors" class="w3-bar-item w3-button">Exteriores</a>
+                <a href="Paints" class="w3-bar-item w3-button">Tintas</a>
+            </div>
+        </div>
+        <a href="../Login/Index" class="w3-bar-item w3-button">
+            <img src="~/Images/logout.png" width="25" height="15" class="img-responsive" alt="~Logout"> Logout
+        </a>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("demo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+    <div>
+        <table class="table" style="margin-top: 1cm;">
+            <caption>Lista de Clientes:</caption>
+            <tr>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    E-mail
+                </th>
+                <th>
+                    Morada
+                </th>
+                <th>
+                    Localidade
+                </th>
+                <th>
+                    Cod. Postal
+                </th>
+                <th>
+                    Password
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    aa
+                </td>
+                <td>
+                    aa
+                </td>
+                <td>
+                    ss
+                </td>
+                <td>
+                    dds
+                </td>
+                <td>
+                    2324-244
+                </td>
+                <td>
+                    aiodfbns
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    ff
+                </td>
+                <td>
+                    rr
+                </td>
+                <td>
+                    sse
+                </td>
+                <td>
+                    ds
+                </td>
+                <td>
+                    6262-423
+                </td>
+                <td>
+                    kajnbhds
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ff
+                </td>
+                <td>
+                    rr
+                </td>
+                <td>
+                    sse
+                </td>
+                <td>
+                    ds
+                </td>
+                <td>
+                    6262-423
+                </td>
+                <td>
+                    kajnbhds
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ff
+                </td>
+                <td>
+                    rr
+                </td>
+                <td>
+                    sse
+                </td>
+                <td>
+                    ds
+                </td>
+                <td>
+                    6262-423
+                </td>
+                <td>
+                    kajnbhds
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ff
+                </td>
+                <td>
+                    rr
+                </td>
+                <td>
+                    sse
+                </td>
+                <td>
+                    ds
+                </td>
+                <td>
+                    6262-423
+                </td>
+                <td>
+                    kajnbhds
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer">
+        <p class="pull-left">&copy; 2018 Smart Painting</p>
+    </div>
+</body>
+</html>
